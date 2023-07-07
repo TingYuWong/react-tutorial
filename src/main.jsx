@@ -23,9 +23,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Root />}>
-          <Route path="/login" element={<Login />}/>
-          <Route path="/public" element={<PublicContent />}/>
-          <Route path="/protected" element={<ProtectedRoute />}>
+          <Route path="login" element={<Login />}/>
+          <Route path="public" element={<PublicContent />}/>
+          <Route path="protected" element={<ProtectedRoute />}>
             <Route index element={<ProtectedContent />}/>
           </Route>
         </Route>
